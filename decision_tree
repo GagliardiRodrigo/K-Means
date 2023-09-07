@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<Unit price &le; 51.235<br/>entropy = 1.351<br/>samples = 1000<br/>value = [344.0, 1088.5, 345.0]<br/>class = 1>, fillcolor="#98f2be"] ;
+1 [label=<Unit price &le; 38.91<br/>entropy = 1.281<br/>samples = 448<br/>value = [147, 546, 145]<br/>class = 1>, fillcolor="#8df0b6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<Unit price &le; 38.505<br/>entropy = 1.338<br/>samples = 318<br/>value = [103.0, 353.5, 114.0]<br/>class = 1>, fillcolor="#97f1bd"] ;
+1 -> 2 ;
+3 [label=<entropy = 1.329<br/>samples = 313<br/>value = [103.0, 353.5, 109.0]<br/>class = 1>, fillcolor="#95f1bc"] ;
+2 -> 3 ;
+4 [label=<entropy = 0.0<br/>samples = 5<br/>value = [0, 0, 5]<br/>class = 2>, fillcolor="#8139e5"] ;
+2 -> 4 ;
+5 [label=<Unit price &le; 39.475<br/>entropy = 1.13<br/>samples = 130<br/>value = [44.0, 192.5, 31.0]<br/>class = 1>, fillcolor="#7beeab"] ;
+1 -> 5 ;
+6 [label=<entropy = 0.267<br/>samples = 7<br/>value = [1, 21, 0]<br/>class = 1>, fillcolor="#42e687"] ;
+5 -> 6 ;
+7 [label=<entropy = 1.179<br/>samples = 123<br/>value = [43.0, 171.5, 31.0]<br/>class = 1>, fillcolor="#81efaf"] ;
+5 -> 7 ;
+8 [label=<Unit price &le; 63.895<br/>entropy = 1.405<br/>samples = 552<br/>value = [197.0, 542.5, 200.0]<br/>class = 1>, fillcolor="#a3f3c5"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<Unit price &le; 62.04<br/>entropy = 1.519<br/>samples = 139<br/>value = [47, 98, 64]<br/>class = 1>, fillcolor="#d1f9e1"] ;
+8 -> 9 ;
+10 [label=<entropy = 1.469<br/>samples = 118<br/>value = [38, 98, 52]<br/>class = 1>, fillcolor="#bcf6d4"] ;
+9 -> 10 ;
+11 [label=<entropy = 0.985<br/>samples = 21<br/>value = [9, 0, 12]<br/>class = 2>, fillcolor="#e0cef8"] ;
+9 -> 11 ;
+12 [label=<Month &le; 2.5<br/>entropy = 1.357<br/>samples = 413<br/>value = [150.0, 444.5, 136.0]<br/>class = 1>, fillcolor="#9bf2bf"] ;
+8 -> 12 ;
+13 [label=<entropy = 1.279<br/>samples = 279<br/>value = [101.0, 339.5, 81.0]<br/>class = 1>, fillcolor="#8ff0b8"] ;
+12 -> 13 ;
+14 [label=<entropy = 1.496<br/>samples = 134<br/>value = [49, 105, 55]<br/>class = 1>, fillcolor="#bff7d6"] ;
+12 -> 14 ;
+}
